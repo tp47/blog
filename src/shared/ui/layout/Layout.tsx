@@ -12,10 +12,8 @@ function Layout({ headerSlot, bottomSlot }: LayoutProps) {
   return (
     <div className={styles.root}>
       {headerSlot}
-      <div className={styles.container}>
-        <div className={styles.content}>
-          <Outlet />
-        </div>
+      <div className={styles.content}>
+        <Outlet />
       </div>
       <footer className={styles.footer}></footer>
       {bottomSlot}
@@ -24,4 +22,4 @@ function Layout({ headerSlot, bottomSlot }: LayoutProps) {
   );
 }
 
-export {Layout}
+export { Layout };

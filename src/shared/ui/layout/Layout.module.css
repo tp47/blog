@@ -1,9 +1,6 @@
 .root {
   @apply flex min-h-screen flex-col gap-3;
 }
-.container {
-  @apply flex grow flex-row gap-3;
-}
-.content{
-  @apply flex grow flex-row gap-3;
+.content {
+  @apply flex  flex-col gap-3 px-3 py-3;
 }

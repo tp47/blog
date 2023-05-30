@@ -1,10 +1,19 @@
 import { HomePage } from "@/pages";
+import { NotFound } from "@/shared/ui";
 import { createBrowserRouter } from "react-router-dom";
+
+import { baseLayout } from "../layouts";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <HomePage />,
+    element: baseLayout,
+    errorElement: <NotFound />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+    ],
   },
 ]);
 

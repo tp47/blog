@@ -1,0 +1,3 @@
+.layoutHeader {
+  @apply flex flex-row justify-start border-b border-true-green px-2 py-4;
+}

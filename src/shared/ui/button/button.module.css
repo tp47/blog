@@ -1,0 +1,3 @@
+.button {
+  @apply relative block border border-true-green bg-black px-6 py-1 font-mono font-extralight uppercase text-true-green shadow-layer hover:shadow-layer-filled;
+}
